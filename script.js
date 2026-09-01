@@ -1,0 +1,1 @@
+//Elegir Informática es la opción ideal porque ofrece una formación integral y sumamente actualizada que combina desde programación moderna, desarrollo web y móvil hasta robótica, redes e inteligencia artificial, permitiéndote crear tus propios proyectos y preparándote directamente para los desafíos y empleos del mundo digital actual.  
