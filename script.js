@@ -1,1 +1,17 @@
-//Elegir Informática es la opción ideal porque ofrece una formación integral y sumamente actualizada que combina desde programación moderna, desarrollo web y móvil hasta robótica, redes e inteligencia artificial, permitiéndote crear tus propios proyectos y preparándote directamente para los desafíos y empleos del mundo digital actual.  
+// menu hamburguesa para el header y el responsive
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+if (menuToggle && menu) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
