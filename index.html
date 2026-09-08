@@ -1,114 +1,245 @@
 <!DOCTYPE html>
-    <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Informatica</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
-    <body>
-
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagenes/favicon.png">
+</head>
+<body>
+    <!--header o navbar-->
     <header class="header">
-        <div class="logo">Escuela Tecnica 5</div>
-        <nav class="menu">
+        <a href="#inicio" class="logo">EEST N°5<span>Amancio Williams</span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="menu" id="menu">
             <a href="#inicio">Inicio</a>
             <a href="#contenidos">Contenidos</a>
-            <a href="#redes">Redes informaticas</a>
-            <a href="#juegos">Videojuegos</a>
+            <a href="#redes">Redes</a>
+            <a href="#porque">¿Por qué Informática?</a>
+            <a href="#salida">Salida laboral</a>
+            <a href="#futuro">Estudios a futuro</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <section id="inicio"></section>
-    <section class="banner">
-        <h1>EEST 5 Amancio Williams</h1>
-        <h2>Contenidos de la especialidad de informatica</h2><br>
-        <p>En esta pagina se hablaran sobre los distintos temas en el ambito de la informatica</p><br>
-        <a href="https://eest5mdp.edu.ar/" class="link">Haz click aca para entrar a la pagina oficial de EEST N5</a>
-    </section>
-    <section id="contenidos">
-        <div class="juegos">
-                <h2>Especialidad de Informatica</h2>
+
+    <!--hero o coso que va abajo del navbar-->
+    <section id="inicio" class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+            <p class="hero-kicker">EEST N°5 · Amancio Williams</p>
+            <h1 class="hero-title">La especialidad de<br>Informatica</h1>
+            <p class="hero-text">Sistemas, redes y hardware: todo lo que hace funcionar al mundo digital</p>
+            <a href="https://eest5mdp.edu.ar/" class="btn-link">Click aqui para ir a la pagina oficial de la escuela</a>
         </div>
-        <main class="productos" class="htlm">
-            <div class="producto">
-                <h2 class="color">En que consiste la especialidad?</h2><br>
-                <img src="imagenes/sistemasoperativos.png" alt="sistemasoperativos" class="productos_imagenes">
-                <p class="color">Se veran los distintos sistemas operativos y su profundizacion a como funcionan</p>
-            </div>
-            <div class="producto">
-                <h2 class="color">Que conocimientos adquieren los alumnos?</h2><br>
-                <img src="imagenes/lenguajes.png" alt="lenguajes" class="productos_imagenes">
-                <p class="color">Se veran los distintos lenguajes de programacion y su aplicacion en proyectos reales</p>
-            </div>
-        </main>
-        <section class="banner">
-            <h1>¿Es una buena opcion elegir informatica?</h1>
-            <h2></h2><br>
-            <p></p><br>
-        </section>
-    </section>
-    <section id="contenidos">
-        <div class="juegos">
-                <h2>Contenidos principales de la especialidad</h2>
-        </div>
-        <main class="productos" class="htlm">
-        <div class="producto">
-            <h2 class="color">Lenguajes de programacion y algoritmos</h2><br>
-            <img src="imagenes/sistemasoperativos.png" alt="sistemasoperativos" class="productos_imagenes">
-            <p class="color">Se veran los distintos sistemas operativos y su profundizacion a como funcionan</p>
-        </div>
-        <div class="producto">
-            <h2 class="color">Hardware y robotica</h2><br>
-            <img src="imagenes/lenguajes.png" alt="lenguajes" class="productos_imagenes">
-            <p class="color">Se veran los distintos lenguajes de programacion y su aplicacion en proyectos reales</p>
-        </div>
-        <div class="producto">
-            <h2 class="color">Sistemas Operativos y Redes</h2><br>
-            <img src="imagenes/hardware.png" alt="hardware" class="productos_imagenes">
-            <p class="color">Se veran como funciona el hardware de una computadora y su debida instalacion correcta</p>
-        </div>
-        <div class="producto">
-            <h2 class="color">Desarrollo Web y de videojuegos</h2><br>
-            <img src="imagenes/hardware.png" alt="hardware" class="productos_imagenes">
-            <p class="color">Se veran como funciona el hardware de una computadora y su debida instalacion correcta</p>
-        </div>
-    </section>
-    <section id="redes">
-        <section class="banner">
-            <h1>Redes informaticas</h1>
-            <img src="imagenes/redes.png" alt="Foto de redes informaticas" width="400">
-            <h2>¿Que son las redes informaticas?</h2>
-            <br><p>Las redes informaticas son un conjunto de dispositivos electrónicos interconectados</p>
-            <p>(como computadoras y servidores) que se comunican entre sí para compartir información, recursos y servicios</p></p>
-        </section>
     </section>
 
-    <section id="juegos">
-        <div class="juegos">
-                <h2>Juegos preferidos por todos los estudiantes de la Tecnica 5</h2>
+    <section id="contenidos" class="section">
+        <!--primer section para poner lo de sistemas operativos-->
+        <div class="feature-row">
+            <div class="feature-media">
+                <img src="imagenes/sistemasoperativos.png" alt="Estudiantes trabajando con sistemas operativos" loading="lazy">
+            </div>
+            <div class="feature-text">
+                <p class="eyebrow-plain">¿En que consiste la especialidad?</p>
+                <h2>Entender la maquina desde adentro</h2>
+                <p>Se estudian los distintos sistemas operativos y se profundiza en como realmente funcionan; procesos, archivos, memoria, entre otros muchos mas</p>
+            </div>
         </div>
-        <main class="productos" class="htlm">
-            <div class="producto">
-                <img src="imagenes/hotlinemiami.png" alt="Hotline Miami: Wrong Number" class="productos_imagenes">
-                <h2 class="color">Hotline Miami: Wrong Number</h2>
-                <p class="color">$7.99</p>
-                <button>Comprar</button>
+        <!--segundo section para poner lo de lenguajes de programacion-->
+        <div class="feature-row reverse">
+            <div class="feature-media">
+                <img src="imagenes/lenguajes.png" alt="Código de distintos lenguajes de programación" loading="lazy">
             </div>
-            <div class="producto">
-                <img src="imagenes/terraria.png" alt="Terraria" class="productos_imagenes">
-                <br><h2 class="color">Terraria</h2>
-                <p class="color">$9.99</p>
-                <button>Comprar</button>
+            <div class="feature-text">
+                <p class="eyebrow-plain">¿Que aprenden los alumnos?</p>
+                <h2>Programar con proposito</h2>
+                <p>Se aprenden distintos lenguajes de programación y su aplicacion en proyectos reales desde el primer "hola mundo" hasta sistemas completos hechos por el alumno</p>
             </div>
-        </section>
-        </main>
-    <section id="contacto">
-        <footer class="footer">
-            <p>Telefono: 223 472-2408</p>
-            <p>Correo: eest_5@gmail.com</p><br>
-            <p>© 2026 Escuela tecnica N5</p>
-        </footer>
+        </div>
+
+        <!--div q dice porque es bueno elegir informatica-->
+        <div class="statement-band">
+            <h2>¿Es una buena opcion elegir informatica?</h2>
+            <p class="statement-lead">Es una excelente opción pero no es para todos</p>
+            <p>Elegir informatica es ideal para quienes disfrutan la tecnologia o quieren expresar sus ideas mediante proyectos. La especialidad ofrece una formacion integral que va desde la programación moderna hasta la robotica</p>
+        </div>
+
+        <!--contenidos principales-->
+        <div class="modules-head">
+            <h2>Contenidos principales de la especialidad</h2>
+        </div>
+        <div class="modules-grid">
+            <article class="module-card module-bordo">
+                <p class="module-tag">MOD · PROGRAMAR</p>
+                <h3>Lenguajes de programacion y algoritmos</h3>
+                <p>Logica, estructuras de datos y los fundamentos que sostienen cualquier programa sin importar el lenguaje</p>
+            </article>
+            <article class="module-card module-verde">
+                <p class="module-tag">MOD · HARDWARE</p>
+                <h3>Hardware y robótica</h3>
+                <p>Componentes, circuitos y automatización: como se construye y programa una computadora</p>
+            </article>
+            <article class="module-card module-bordo">
+                <p class="module-tag">MOD · SISTEMAS</p>
+                <h3>Sistemas operativos y redes</h3>
+                <p>Como funciona el hardware de una computadora a la par que se ve como se instala y configura correctamente</p>
+            </article>
+            <article class="module-card module-verde">
+                <p class="module-tag">MOD · DESARROLLO</p>
+                <h3>Desarrollo web y de videojuegos</h3>
+                <p>De la idea al resultado; paginas web, aplicaciones y videojuegos</p>
+            </article>
+        </div>
     </section>
+
+    <!--section de porque se deberia elegir informatica-->
+    <section id="porque" class="section section-alt">
+        <div class="section-intro">
+            <p class="eyebrow-plain">¿Por qué elegir informatica?</p>
+            <h2>Una especialidad para crear, resolver y aprender</h2>
+            <p>Informatica no es usar una computadora o jugar a los jueguitos. Consiste en comprender la tecnologia, resolver problemas y convertir ideas en proyectos reales</p>
+        </div>
+
+        <!--razones-->
+        <div class="reasons-grid">
+            <article class="reason-card">
+                <p class="reason-number">RAZoN · 01</p>
+                <h3>Aprendes a crear</h3>
+                <p>En lugar de ser solamente utilizar la tecnologia, aprendes a como desarrollarla pudiendo crear paginas web, videojuegos, etc</p>
+            </article>
+            <article class="reason-card">
+                <p class="reason-number">RAZON · 02</p>
+                <h3>Desarrollas habilidades útiles</h3>
+                <p>La programacion, el pensamiento lógico y la resolución de problemas son herramientas que pueden servir en todos los ambitos de la vida</p>
+            </article>
+            <article class="reason-card">
+                <p class="reason-number">RAZÓN · 03</p>
+                <h3>Resolves problemas de la vida cotidiana y conseguis oportunidades a futuro</h3>
+                <p>La informatica puede abrir caminos hacia el desarrollo de software, redes, soporte, hardware, videojuegos, etc para el futuro laboral</p>
+            </article>
+        </div>
+    </section>
+
+    <!--salidas laborales-->
+    <section id="salida" class="jobs">
+        <div class="jobs-content">
+            <div class="section-intro">
+                <p class="eyebrow-plain">Salida laboral</p>
+                <h2>¿Dónde puedo trabajar despues?</h2>
+                <p>La informatica ofrece distintos perfiles laborales dependiendo las preferencias del estudiante ya que hay carreras orientadas al desarrollo web, ciberseguridad, desarrollo de videojuegos en empresas hasta poder ser dev indie</p>
+            </div>
+
+            <div class="jobs-grid">
+                <div>
+                    <div class="jobs-list">
+                        <article class="job-item">
+                            <h3>Desarrollador de software</h3>
+                            <p>Creacion y mantenimiento de aplicaciones y sistemas</p>
+                        </article>
+                        <article class="job-item">
+                            <h3>Desarrollo web</h3>
+                            <p>Diseño y programación de sitios y aplicaciones web.</p>
+                        </article>
+                        <article class="job-item">
+                            <h3>Soporte tecnico</h3>
+                            <p>Instalación, mantenimiento y resolución de problemas informaticos</p>
+                        </article>
+                        <article class="job-item">
+                            <h3>Redes y sistemas</h3>
+                            <p>Configuración y administración de equipos, servidores y redes</p>
+                        </article>
+                        <article class="job-item">
+                            <h3>Hardware</h3>
+                            <p>Armado, diagnóstico, reparación y mantenimiento de computadoras</p>
+                        </article>
+                        <article class="job-item">
+                            <h3>Videojuegos y multimedia</h3>
+                            <p>Programación y desarrollo de proyectos interactivos y digitales</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="info-image">
+                   <!--imagen aca-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--planes a futuro-->
+    <section id="futuro" class="section">
+        <div class="section-intro">
+            <p class="eyebrow-plain">Estudios a futuro</p>
+            <h2>La especialidad recien es el principio</h2>
+            <p>Al egresar, la formación técnica puede complementarse con estudios superiores y certificaciones. No existe un único camino: podés especializarte según el área de informática que más te interese.</p>
+        </div>
+
+        <div class="future-grid">
+            <div class="info-image" aria-label="Espacio reservado para una imagen sobre estudios a futuro">
+                <!-- Reemplazar este comentario por tu imagen -->
+            </div>
+
+            <div class="future-list">
+                <article class="future-item">
+                    <div>
+                        <h3>Ingeniería en Sistemas / Informática</h3>
+                        <p>Una opción universitaria para profundizar en software, sistemas, infraestructura y gestión tecnológica.</p>
+                    </div>
+                </article>
+                <article class="future-item">
+                    <div>
+                        <h3>Licenciaturas y tecnicaturas</h3>
+                        <p>Existen carreras de grado y tecnicaturas orientadas al desarrollo, análisis de sistemas, redes y otras especialidades.</p>
+                    </div>
+                </article>
+                <article class="future-item">
+                    <div>
+                        <h3>Especialización en programación</h3>
+                        <p>Podés profundizar en desarrollo web, aplicaciones, videojuegos, bases de datos, inteligencia artificial y otras áreas.</p>
+                    </div>
+                </article>
+                <article class="future-item">
+                    <div>
+                        <h3>Cursos y certificaciones</h3>
+                        <p>También podés complementar tus conocimientos con cursos y certificaciones específicas para herramientas o tecnologías.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--section de redes informaticas-->
+    <section id="redes" class="redes">
+        <div class="redes-content">
+            <div class="redes-text">
+                <p class="eyebrow-plain">Redes informaticas</p>
+                <h2>Todo lo que se comunica esta en la red</h2>
+                <p>Las redes informaticas son un conjunto de dispositivos electronicos interconectados (como computadoras y servidores) que se comunican entre si para compartir informacion, recursos y servicios.</p>
+            </div>
+            <div class="redes-media">
+                <img src="imagenes/redes.png" alt="Diagrama de una red informática" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="contacto" class="footer">
+        <div class="footer-content">
+            <p class="footer-logo">EEST N°5 Amancio Williams</p>
+            <div class="footer-info">
+                <p>Teléfono: 223 472-2408</p> <!--numero falso-->
+                <p>Correo: eest_5@gmail.com</p> <!--gmail falso-->
+            </div>
+            <p class="footer-copy">© 2026 Escuela Técnica N°5</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
