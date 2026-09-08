@@ -262,7 +262,7 @@ a { color: inherit; }
     margin-bottom: 10px;
 }
 
-/* Feature rows */
+/* diseños lindos */
 .feature-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -280,6 +280,7 @@ a { color: inherit; }
     object-fit: cover;
     border-radius: var(--radius);
     background: var(--paper-2);
+    background-size: cover;
 }
 
 .feature-text h2 {
